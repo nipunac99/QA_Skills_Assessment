@@ -14,10 +14,10 @@ export default defineConfig({
     video: "retain-on-failure",
   },
   projects: [
-    // {
-    //   name: "chromium",
-    //   use: { ...devices["Desktop Chrome"] },
-    // },
+    {
+      name: "chromium",
+      use: { ...devices["Desktop Chrome"] },
+    },
     // {
     //   name: "firefox",
     //   use: { ...devices["Desktop Firefox"] },
@@ -31,11 +31,11 @@ export default defineConfig({
     //   use: { ...devices["Pixel 5"] },
     // },
 
-    {
-      name: "Mobile Safari",
-      use: {
-        ...devices["iPhone 12"],
-      },
-    },
+    // {
+    //   name: "Mobile Safari",
+    //   use: {
+    //     ...devices["iPhone 12"],
+    //   },
+    // },
   ],
 });
