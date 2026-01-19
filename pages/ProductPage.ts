@@ -10,7 +10,7 @@ export class ProductPage {
 
   constructor(page: Page) {
     this.page = page;
-    // Update these selectors based on actual eBay DOM
+   
     this.relatedProductsSection = page.locator(".srp-river-results, #srp-river-results, .s-item").first();
     this.relatedProductItems = this.relatedProductsSection.locator(".related-item, .evo-item");
     this.productTitle = page.locator("h1.x-item-title");
@@ -19,7 +19,7 @@ export class ProductPage {
   }
 
   async scrollToRelatedProducts() {
-    // await this.relatedProductsSection.scrollIntoViewIfNeeded();
+    
 
     await this.relatedProductsSection.waitFor({
       state: "visible",

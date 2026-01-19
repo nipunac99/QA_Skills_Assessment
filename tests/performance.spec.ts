@@ -18,7 +18,7 @@ test.describe('Performance Tests', () => {
     
     const loadTime = endTime - startTime;
     
-    // Page should load in less than 3000ms
+    
     expect(loadTime).toBeLessThan(3000);
   });
 });

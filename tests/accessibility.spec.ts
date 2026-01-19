@@ -14,15 +14,15 @@ test.describe('Accessibility Tests', () => {
     
     await productPage.scrollToRelatedProducts();
     
-    // Tab to first related product
+   
     await page.keyboard.press('Tab');
     await page.keyboard.press('Tab');
     
-    // Check if element is focused
+    
     const focusedElement = await page.evaluate(() => document.activeElement?.tagName);
     expect(['A', 'BUTTON']).toContain(focusedElement);
     
-    // Press Enter to navigate
+    
     const initialUrl = page.url();
     await page.keyboard.press('Enter');
     
