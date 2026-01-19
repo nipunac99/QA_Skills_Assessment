@@ -1,0 +1,560 @@
+{
+  "config": {
+    "configFile": "G:\\QA_Skills_Assessment\\playwright.config.ts",
+    "rootDir": "G:/QA_Skills_Assessment/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "G:/QA_Skills_Assessment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "G:/QA_Skills_Assessment/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "accessibility.spec.ts",
+      "file": "accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Accessibility Tests",
+          "file": "accessibility.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-025: Verify Keyboard Navigation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 40942,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "G:\\QA_Skills_Assessment\\pages\\ProductPage.ts",
+                            "column": 39,
+                            "line": 28
+                          },
+                          "message": "Error: locator.scrollIntoViewIfNeeded: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.srp-river-results, #srp-river-results, .s-item').first()\u001b[22m\n\u001b[2m    - locator resolved to visible <div id=\"srp-river-results\" class=\"srp-river-results clearfix\">…</div>\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ProductPage.ts:28\n\n\u001b[0m \u001b[90m 26 |\u001b[39m       timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 27 |\u001b[39m     })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mrelatedProductsSection\u001b[33m.\u001b[39mscrollIntoViewIfNeeded({\n \u001b[90m    |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m       timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 30 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m   }\u001b[0m\n\u001b[2m    at ProductPage.scrollToRelatedProducts (G:\\QA_Skills_Assessment\\pages\\ProductPage.ts:28:39)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\accessibility.spec.ts:15:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-19T13:30:04.545Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\accessibility-Accessibilit-3f8fd--Verify-Keyboard-Navigation-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\accessibility-Accessibilit-3f8fd--Verify-Keyboard-Navigation-firefox\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ddd864604af8a6a0198f-6a0434da16087e1da1d6",
+              "file": "accessibility.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "performance.spec.ts",
+      "file": "performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Performance Tests",
+          "file": "performance.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-018: Verify Page Load Performance",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 34019,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
+                            "column": 21,
+                            "line": 31
+                          },
+                          "message": "Error: page.waitForLoadState: Test timeout of 30000ms exceeded.\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:31\n\n\u001b[0m \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"load\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msearchResults\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"load\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m     \u001b[90m// await this.page.waitForLoadState(\"networkidle\");\u001b[39m\n \u001b[90m 34 |\u001b[39m   }\u001b[0m\n\u001b[2m    at SearchPage.clickFirstResult (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:31:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\performance.spec.ts:15:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-19T13:30:04.530Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\performance-Performance-Te-18c6f-erify-Page-Load-Performance-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\performance-Performance-Te-18c6f-erify-Page-Load-Performance-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\performance-Performance-Te-18c6f-erify-Page-Load-Performance-firefox\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b15d6361b2fc38288977-c4819768e89c79f18e82",
+              "file": "performance.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "relatedProducts.spec.ts",
+      "file": "relatedProducts.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Related Products Feature",
+          "file": "relatedProducts.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-001: Verify Related Products Section Displays",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 39860,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
+                            "column": 21,
+                            "line": 31
+                          },
+                          "message": "Error: page.waitForLoadState: Test timeout of 30000ms exceeded.\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:31\n\n\u001b[0m \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"load\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msearchResults\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"load\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m     \u001b[90m// await this.page.waitForLoadState(\"networkidle\");\u001b[39m\n \u001b[90m 34 |\u001b[39m   }\u001b[0m\n\u001b[2m    at SearchPage.clickFirstResult (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:31:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:19:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-19T13:30:49.034Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-c59ed-d-Products-Section-Displays-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-c59ed-d-Products-Section-Displays-firefox\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7efc51ec427bf7f9f268-e36440d88bc5eb7cf5ae",
+              "file": "relatedProducts.spec.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "TC-002: Verify Maximum 6 Related Products Display",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 40644,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
+                            "column": 38,
+                            "line": 30
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.tourtip__host').first()\u001b[22m\n\u001b[2m    - waiting for\" https://www.ebay.com/sch/i.html?_nkw=mens+leather+wallet&_sacat=0&_from=R40&_trksid=m570.l1313\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.ebay.com/sch/i.html?_nkw=mens+leather+wallet&_sacat=0&_from=R40&_trksid=m570.l1313\"\u001b[22m\n\u001b[2m    - locator resolved to <span class=\"tourtip__host\">…</span>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:30\n\n\u001b[0m \u001b[90m 28 |\u001b[39m   \u001b[36masync\u001b[39m clickFirstResult() {\n \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"load\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 30 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msearchResults\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"load\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m     \u001b[90m// await this.page.waitForLoadState(\"networkidle\");\u001b[39m\u001b[0m\n\u001b[2m    at SearchPage.clickFirstResult (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:30:38)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:30:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-19T13:31:01.624Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-81c28--6-Related-Products-Display-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-81c28--6-Related-Products-Display-firefox\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7efc51ec427bf7f9f268-aa372cc922495d2bd2ae",
+              "file": "relatedProducts.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "TC-003: Verify Related Products Same Category",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "skipped",
+                      "duration": 2,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-19T13:31:50.448Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7efc51ec427bf7f9f268-ffd974b28c589297aeff",
+              "file": "relatedProducts.spec.ts",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "TC-004: Verify Price Range Validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 2,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-19T13:31:52.127Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7efc51ec427bf7f9f268-988cd8625852540d0bb7",
+              "file": "relatedProducts.spec.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "TC-008: Verify Product Click Navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7efc51ec427bf7f9f268-7810d33ec0d374cc0741",
+              "file": "relatedProducts.spec.ts",
+              "line": 69,
+              "column": 7
+            },
+            {
+              "title": "TC-012: Verify Main Product Not in Related Products",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7efc51ec427bf7f9f268-a12ba90d9658406a1542",
+              "file": "relatedProducts.spec.ts",
+              "line": 83,
+              "column": 7
+            },
+            {
+              "title": "TC-019: Verify Product Images Load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7efc51ec427bf7f9f268-10f32666b19055c1d66f",
+              "file": "relatedProducts.spec.ts",
+              "line": 104,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "responsive.spec.ts",
+      "file": "responsive.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Responsive Design Tests",
+          "file": "responsive.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-013: Verify Mobile Responsive Layout",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e0223b006feb3d306446-90f81f2fab72d5f83c37",
+              "file": "responsive.spec.ts",
+              "line": 7,
+              "column": 7
+            },
+            {
+              "title": "TC-014: Verify Tablet Responsive Layout",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e0223b006feb3d306446-78ed2972dbaa1d05c944",
+              "file": "responsive.spec.ts",
+              "line": 30,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-19T13:30:01.763Z",
+    "duration": 110438.534,
+    "expected": 0,
+    "skipped": 7,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}
