@@ -1,4 +1,4 @@
-<h1>eBay Related Products - Playwright Automation Framework</h1>  
+<h1>QA Skills Assessment - Playwright Automation Framework</h1>  
 
 <h2> Project Overview</h2>
 <li> Automated test suite for validating eBay's Related Products feature using Playwright with TypeScript. </li>  
