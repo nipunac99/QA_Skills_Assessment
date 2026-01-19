@@ -35,7 +35,7 @@
 <li> <code> npx playwright test </code> </li>
 
 <h2>Run specific test file</h2>
-<li> <code> npx play wright test --relatedProducts.spec.ts</code></li>
+<li> <code> npx playwright test --relatedProducts.spec.ts</code></li>
 
 <h2>Run tests in headed mode</h2>
 <li>  <code> npx playwright test --headed</code></li>
