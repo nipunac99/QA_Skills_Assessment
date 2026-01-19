@@ -21,7 +21,7 @@
 
 <h2>Installation</h2>
 
-<li>git clone <your-repo-url></li>
+<li>git clone <link>https://github.com/nipunac99/QA_Skills_Assessment.git </li>
 
 
 
