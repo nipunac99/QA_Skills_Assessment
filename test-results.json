@@ -43,8 +43,8 @@
         "metadata": {
           "actualWorkers": 2
         },
-        "id": "Mobile Safari",
-        "name": "Mobile Safari",
+        "id": "chromium",
+        "name": "chromium",
         "testDir": "G:/QA_Skills_Assessment/tests",
         "testIgnore": [],
         "testMatch": [
@@ -77,56 +77,34 @@
           "specs": [
             {
               "title": "TC-025: Verify Keyboard Navigation",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 40181,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
-                          },
-                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\accessibility.spec.ts:11:22\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 24523,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:38:06.929Z",
+                      "startTime": "2026-01-19T14:47:54.491Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "G:\\QA_Skills_Assessment\\test-results\\accessibility-Accessibilit-3f8fd--Verify-Keyboard-Navigation-Mobile-Safari\\video.webm"
-                        }
-                      ]
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "ddd864604af8a6a0198f-f7ad476efa151618b837",
+              "id": "ddd864604af8a6a0198f-a0c660b772aba309f877",
               "file": "accessibility.spec.ts",
               "line": 7,
               "column": 7
@@ -157,49 +135,67 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
-                      "status": "timedOut",
-                      "duration": 40127,
+                      "status": "failed",
+                      "duration": 20088,
                       "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m3000\u001b[39m\nReceived:   \u001b[31m6011\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m3000\u001b[39m\nReceived:   \u001b[31m6011\u001b[39m\n    at G:\\QA_Skills_Assessment\\tests\\performance.spec.ts:22:22",
+                        "location": {
+                          "file": "G:\\QA_Skills_Assessment\\tests\\performance.spec.ts",
+                          "column": 22,
+                          "line": 22
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m     \n \u001b[90m 21 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     expect(loadTime)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
                           "location": {
-                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
+                            "file": "G:\\QA_Skills_Assessment\\tests\\performance.spec.ts",
+                            "column": 22,
+                            "line": 22
                           },
-                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\performance.spec.ts:11:22\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m3000\u001b[39m\nReceived:   \u001b[31m6011\u001b[39m\n\n\u001b[0m \u001b[90m 20 |\u001b[39m     \n \u001b[90m 21 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     expect(loadTime)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\performance.spec.ts:22:22\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:38:06.828Z",
+                      "startTime": "2026-01-19T14:47:54.462Z",
                       "annotations": [],
                       "attachments": [
                         {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\performance-Performance-Te-18c6f-erify-Page-Load-Performance-chromium\\test-failed-1.png"
+                        },
+                        {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "G:\\QA_Skills_Assessment\\test-results\\performance-Performance-Te-18c6f-erify-Page-Load-Performance-Mobile-Safari\\video.webm"
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\performance-Performance-Te-18c6f-erify-Page-Load-Performance-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\performance-Performance-Te-18c6f-erify-Page-Load-Performance-chromium\\error-context.md"
                         }
-                      ]
+                      ],
+                      "errorLocation": {
+                        "file": "G:\\QA_Skills_Assessment\\tests\\performance.spec.ts",
+                        "column": 22,
+                        "line": 22
+                      }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "b15d6361b2fc38288977-b058e890412853a10248",
+              "id": "b15d6361b2fc38288977-86092bad68111d7947cc",
               "file": "performance.spec.ts",
               "line": 7,
               "column": 7
@@ -223,72 +219,34 @@
           "specs": [
             {
               "title": "TC-001: Verify Related Products Section Displays",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 2,
                       "parallelIndex": 1,
-                      "status": "timedOut",
-                      "duration": 40124,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8",
-                        "location": {
-                          "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                          "column": 8,
-                          "line": 11
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                            "column": 8,
-                            "line": 11
-                          },
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8\u001b[22m"
-                        },
-                        {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
-                          },
-                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:14:22\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 16303,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:38:52.998Z",
+                      "startTime": "2026-01-19T14:48:17.962Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-c59ed-d-Products-Section-Displays-Mobile-Safari\\video.webm"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                        "column": 8,
-                        "line": 11
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "7efc51ec427bf7f9f268-4c8a0b35877f4cc8de02",
+              "id": "7efc51ec427bf7f9f268-85f5d52a72b5f27f4af2",
               "file": "relatedProducts.spec.ts",
               "line": 17,
               "column": 7
@@ -302,65 +260,67 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 40108,
+                      "status": "failed",
+                      "duration": 18900,
                       "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:36:19",
                         "location": {
                           "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                          "column": 8,
-                          "line": 11
+                          "column": 19,
+                          "line": 36
                         },
-                        "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m\n \u001b[90m 35 |\u001b[39m     expect(count)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(testData\u001b[33m.\u001b[39mmaxRelatedProducts)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     expect(count)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m\n \u001b[90m 39 |\u001b[39m   test(\u001b[32m\"TC-003: Verify Related Products Same Category\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                            "column": 8,
-                            "line": 11
+                            "column": 19,
+                            "line": 36
                           },
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8\u001b[22m"
-                        },
-                        {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
-                          },
-                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:14:22\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 34 |\u001b[39m\n \u001b[90m 35 |\u001b[39m     expect(count)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(testData\u001b[33m.\u001b[39mmaxRelatedProducts)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     expect(count)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m\n \u001b[90m 39 |\u001b[39m   test(\u001b[32m\"TC-003: Verify Related Products Same Category\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:36:19\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:38:53.129Z",
+                      "startTime": "2026-01-19T14:48:19.329Z",
                       "annotations": [],
                       "attachments": [
                         {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-81c28--6-Related-Products-Display-chromium\\test-failed-1.png"
+                        },
+                        {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-81c28--6-Related-Products-Display-Mobile-Safari\\video.webm"
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-81c28--6-Related-Products-Display-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-81c28--6-Related-Products-Display-chromium\\error-context.md"
                         }
                       ],
                       "errorLocation": {
                         "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                        "column": 8,
-                        "line": 11
+                        "column": 19,
+                        "line": 36
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "7efc51ec427bf7f9f268-315615f53dd10735acd9",
+              "id": "7efc51ec427bf7f9f268-c99ec27f57711fbe2495",
               "file": "relatedProducts.spec.ts",
               "line": 26,
               "column": 7
@@ -374,65 +334,59 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 1,
                       "status": "timedOut",
-                      "duration": 35183,
+                      "duration": 33401,
                       "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8",
-                        "location": {
-                          "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                          "column": 8,
-                          "line": 11
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m"
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                       },
                       "errors": [
                         {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                            "column": 8,
-                            "line": 11
-                          },
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8\u001b[22m"
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                         },
                         {
                           "location": {
-                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
+                            "file": "G:\\QA_Skills_Assessment\\pages\\ProductPage.ts",
+                            "column": 47,
+                            "line": 78
                           },
-                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:14:22\u001b[22m"
+                          "message": "Error: locator.textContent: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.bc-nav-item').last()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ProductPage.ts:78\n\n\u001b[0m \u001b[90m 76 |\u001b[39m\n \u001b[90m 77 |\u001b[39m   \u001b[36masync\u001b[39m getMainProductCategory()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mreturn\u001b[39m (\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mproductCategory\u001b[33m.\u001b[39mlast()\u001b[33m.\u001b[39mtextContent()) \u001b[33m||\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m   }\n \u001b[90m 80 |\u001b[39m\n \u001b[90m 81 |\u001b[39m   \u001b[36masync\u001b[39m areImagesLoaded()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mboolean\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[2m    at ProductPage.getMainProductCategory (G:\\QA_Skills_Assessment\\pages\\ProductPage.ts:78:47)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:43:44\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:39:36.180Z",
+                      "startTime": "2026-01-19T14:48:34.604Z",
                       "annotations": [],
                       "attachments": [
                         {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-3fc20-ated-Products-Same-Category-chromium\\test-failed-1.png"
+                        },
+                        {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-3fc20-ated-Products-Same-Category-Mobile-Safari\\video.webm"
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-3fc20-ated-Products-Same-Category-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-3fc20-ated-Products-Same-Category-chromium\\error-context.md"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                        "column": 8,
-                        "line": 11
-                      }
+                      ]
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "7efc51ec427bf7f9f268-9fcd2fbfeff551c92633",
+              "id": "7efc51ec427bf7f9f268-4d6e50f575ccd38f131d",
               "file": "relatedProducts.spec.ts",
               "line": 39,
               "column": 7
@@ -446,65 +400,59 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "timedOut",
-                      "duration": 40074,
+                      "duration": 36529,
                       "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8",
-                        "location": {
-                          "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                          "column": 8,
-                          "line": 11
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m"
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                       },
                       "errors": [
                         {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                            "column": 8,
-                            "line": 11
-                          },
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8\u001b[22m"
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                         },
                         {
                           "location": {
-                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
+                            "file": "G:\\QA_Skills_Assessment\\pages\\ProductPage.ts",
+                            "column": 47,
+                            "line": 73
                           },
-                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:14:22\u001b[22m"
+                          "message": "Error: locator.textContent: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.x-price-primary')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ProductPage.ts:73\n\n\u001b[0m \u001b[90m 71 |\u001b[39m\n \u001b[90m 72 |\u001b[39m   \u001b[36masync\u001b[39m getMainProductPrice()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mnumber\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m     \u001b[36mconst\u001b[39m priceText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mproductPrice\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mreturn\u001b[39m parseFloat(priceText\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mreplace(\u001b[35m/[^0-9.]/g\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"\"\u001b[39m) \u001b[33m||\u001b[39m \u001b[32m\"0\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 75 |\u001b[39m   }\n \u001b[90m 76 |\u001b[39m\u001b[0m\n\u001b[2m    at ProductPage.getMainProductPrice (G:\\QA_Skills_Assessment\\pages\\ProductPage.ts:73:47)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:55:41\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:39:36.166Z",
+                      "startTime": "2026-01-19T14:48:43.008Z",
                       "annotations": [],
                       "attachments": [
                         {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-cd12c-rify-Price-Range-Validation-chromium\\test-failed-1.png"
+                        },
+                        {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-cd12c-rify-Price-Range-Validation-Mobile-Safari\\video.webm"
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-cd12c-rify-Price-Range-Validation-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-cd12c-rify-Price-Range-Validation-chromium\\error-context.md"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                        "column": 8,
-                        "line": 11
-                      }
+                      ]
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "7efc51ec427bf7f9f268-8c0aa396a754465be8c7",
+              "id": "7efc51ec427bf7f9f268-700ff46523df1ea88739",
               "file": "relatedProducts.spec.ts",
               "line": 51,
               "column": 7
@@ -518,209 +466,127 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "timedOut",
-                      "duration": 40074,
+                      "duration": 37747,
                       "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8",
-                        "location": {
-                          "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                          "column": 8,
-                          "line": 11
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m"
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                       },
                       "errors": [
                         {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                            "column": 8,
-                            "line": 11
-                          },
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8\u001b[22m"
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                         },
                         {
                           "location": {
-                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
+                            "file": "G:\\QA_Skills_Assessment\\pages\\ProductPage.ts",
+                            "column": 47,
+                            "line": 68
                           },
-                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:14:22\u001b[22m"
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.srp-river-results, #srp-river-results, .s-item').first().locator('.related-item, .evo-item').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ProductPage.ts:68\n\n\u001b[0m \u001b[90m 66 |\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36masync\u001b[39m clickRelatedProduct(index\u001b[33m:\u001b[39m number) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 68 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mrelatedProductItems\u001b[33m.\u001b[39mnth(index)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 69 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"networkidle\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m   }\n \u001b[90m 71 |\u001b[39m\u001b[0m\n\u001b[2m    at ProductPage.clickRelatedProduct (G:\\QA_Skills_Assessment\\pages\\ProductPage.ts:68:47)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:76:23\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:40:13.738Z",
+                      "startTime": "2026-01-19T14:49:10.406Z",
                       "annotations": [],
                       "attachments": [
                         {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-8e0e1-fy-Product-Click-Navigation-chromium\\test-failed-1.png"
+                        },
+                        {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-8e0e1-fy-Product-Click-Navigation-Mobile-Safari\\video.webm"
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-8e0e1-fy-Product-Click-Navigation-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-8e0e1-fy-Product-Click-Navigation-chromium\\error-context.md"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                        "column": 8,
-                        "line": 11
-                      }
+                      ]
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "7efc51ec427bf7f9f268-d4350e00bef7fd6aafa7",
+              "id": "7efc51ec427bf7f9f268-8eb4cf67142902470704",
               "file": "relatedProducts.spec.ts",
               "line": 69,
               "column": 7
             },
             {
               "title": "TC-012: Verify Main Product Not in Related Products",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 40121,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8",
-                        "location": {
-                          "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                          "column": 8,
-                          "line": 11
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                            "column": 8,
-                            "line": 11
-                          },
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8\u001b[22m"
-                        },
-                        {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
-                          },
-                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:14:22\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 13657,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:40:18.539Z",
+                      "startTime": "2026-01-19T14:49:24.587Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-eecaf-uct-Not-in-Related-Products-Mobile-Safari\\video.webm"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                        "column": 8,
-                        "line": 11
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "7efc51ec427bf7f9f268-d10bb2b3c5b5492a7ce3",
+              "id": "7efc51ec427bf7f9f268-cfacb1cb0dfd6f2f4102",
               "file": "relatedProducts.spec.ts",
               "line": 83,
               "column": 7
             },
             {
               "title": "TC-019: Verify Product Images Load",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 1,
-                      "status": "timedOut",
-                      "duration": 40138,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8",
-                        "location": {
-                          "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                          "column": 8,
-                          "line": 11
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                            "column": 8,
-                            "line": 11
-                          },
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mlet\u001b[39m productPage\u001b[33m:\u001b[39m \u001b[33mProductPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     searchPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mSearchPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     productPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mProductPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m searchPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:11:8\u001b[22m"
-                        },
-                        {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
-                          },
-                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts:14:22\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13597,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:40:56.084Z",
+                      "startTime": "2026-01-19T14:49:38.595Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "G:\\QA_Skills_Assessment\\test-results\\relatedProducts-Related-Pr-9ddb7--Verify-Product-Images-Load-Mobile-Safari\\video.webm"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "G:\\QA_Skills_Assessment\\tests\\relatedProducts.spec.ts",
-                        "column": 8,
-                        "line": 11
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "7efc51ec427bf7f9f268-1763b58130ccae1ad4a5",
+              "id": "7efc51ec427bf7f9f268-c687a67843653155b512",
               "file": "relatedProducts.spec.ts",
               "line": 104,
               "column": 7
@@ -751,14 +617,14 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
                       "status": "timedOut",
-                      "duration": 35028,
+                      "duration": 30357,
                       "error": {
                         "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
@@ -770,24 +636,35 @@
                         {
                           "location": {
                             "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
+                            "column": 26,
+                            "line": 21
                           },
-                          "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\responsive.spec.ts:16:22\u001b[22m"
+                          "message": "Error: locator.fill: Test ended.\nCall log:\n\u001b[2m  - waiting for locator('#gh-ac')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msearchBox\u001b[33m.\u001b[39mfill(productName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msearchButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m\"load\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m\u001b[0m\n\u001b[2m    at SearchPage.searchProduct (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:21:26)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\responsive.spec.ts:17:22\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:41:00.773Z",
+                      "startTime": "2026-01-19T14:49:53.081Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\responsive-Responsive-Desi-ce8c8-fy-Mobile-Responsive-Layout-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "G:\\QA_Skills_Assessment\\test-results\\responsive-Responsive-Desi-ce8c8-fy-Mobile-Responsive-Layout-chromium\\error-context.md"
+                        }
+                      ]
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "e0223b006feb3d306446-d65f090e8cfcba901c34",
+              "id": "e0223b006feb3d306446-dd64d5a0ec82ef212e0f",
               "file": "responsive.spec.ts",
               "line": 7,
               "column": 7
@@ -801,51 +678,27 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
-                      "status": "interrupted",
-                      "duration": 14344,
-                      "error": {
-                        "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n",
-                        "stack": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\n    at G:\\QA_Skills_Assessment\\tests\\responsive.spec.ts:39:22",
-                        "location": {
-                          "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                          "column": 21,
-                          "line": 17
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                            "column": 21,
-                            "line": 17
-                          },
-                          "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"https://www.ebay.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\SearchPage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.ebay.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m searchProduct(productName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at SearchPage.navigate (G:\\QA_Skills_Assessment\\pages\\SearchPage.ts:17:21)\u001b[22m\n\u001b[2m    at G:\\QA_Skills_Assessment\\tests\\responsive.spec.ts:39:22\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11055,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T14:41:38.343Z",
+                      "startTime": "2026-01-19T14:49:52.269Z",
                       "annotations": [],
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "G:\\QA_Skills_Assessment\\pages\\SearchPage.ts",
-                        "column": 21,
-                        "line": 17
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
-              "id": "e0223b006feb3d306446-9c255cb7e3fbaa66b91a",
+              "id": "e0223b006feb3d306446-5fe41f97f709443b3eac",
               "file": "responsive.spec.ts",
               "line": 30,
               "column": 7
@@ -857,11 +710,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-19T14:38:03.914Z",
-    "duration": 229018.856,
-    "expected": 0,
-    "skipped": 1,
-    "unexpected": 10,
+    "startTime": "2026-01-19T14:47:52.089Z",
+    "duration": 151912.213,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 6,
     "flaky": 0
   }
 }
